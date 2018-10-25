@@ -15,7 +15,7 @@ def create_family():
     with open('family.csv') as f:
         f_csv = csv.reader(f, delimiter=',')
         for row in f_csv:
-            family_path = "e:\\Dataset\\Family\\" + row[1]
+            family_path = "E:\\Dataset\\Family\\" + row[1]
             if not os.path.exists(family_path):
                 os.makedirs(family_path)
 
