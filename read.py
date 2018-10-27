@@ -11,6 +11,7 @@ def read_csv():
             malware_family[row[0]] = row[1]
 
 
+
 def create_family():
     with open('family.csv') as f:
         f_csv = csv.reader(f, delimiter=',')
